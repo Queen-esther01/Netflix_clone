@@ -1,0 +1,151 @@
+:root{
+    --red: #e50914;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+.web_header_text{
+    display: none;
+}
+.introductory_header{
+    height: 80vw;
+    color: white;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.8)),url('../images/header_background_image.jpg');
+    background-position: top;
+    background-size: cover;
+    padding-bottom: 250px;
+    border-bottom: 7px solid grey;
+}
+.logo_signin{
+    width: 85%;
+    margin: auto;
+}
+.header_wrapper{
+    background: linear-gradient(to top,rgba(0.4,0.4,0.4,0),rgba(0,0,0,0.8),rgba(0.4,0,0));
+}
+.header_description{
+    width: 80%;
+    margin: auto;
+}
+.svg-icon-netflix-logo{
+    height: 24px;
+    fill: var(--red);
+    margin-top: 30px;
+}
+.description_container{
+    text-align: center;
+    padding: 50px 0;
+}
+.signin{
+    background-color: var(--red);
+    color: white;
+    border: none;
+    font-size: 14px;
+    padding: 4px 8px;
+    border-radius: 5px;
+    float: right;
+    margin-top: 30px;
+}
+.signup_input{
+    width: 85%;
+    padding: 15px;
+}
+.trial_button{
+    display: block;
+    margin: 15px auto 0 auto;
+    padding: 15px;
+    border: none;
+    background-color: var(--red);
+    color: white;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+#signup_instruction_web{
+    display: none;
+}
+
+
+
+@media(min-width: 550px){
+    .header_description{
+        width: 80%;
+        margin: auto;
+    }
+    .mobile_header_text{
+        display: none;
+    }
+    .web_header_text{
+        display: block;
+    }
+    .logo_signin{
+        width: 90%;
+    }
+    .svg-icon-netflix-logo{
+        height: 30px;
+    }
+    .introductory_header{
+        height: 100%;
+        padding-bottom: 100px;
+    }
+    .description_container{
+        padding-top: 100px;
+    }
+    h1{
+        font-size: 3em;
+    }
+    .header_wrapper{
+        background: linear-gradient(to top,rgba(0.4,0.4,0.4,0),rgba(0.4,0.4,0,0.5),rgba(0.4,0,0,0.7));
+    }
+    .header_description p{
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    #signup_instruction_mobile{
+        font-size: 1em;
+    }
+    .signup_input{
+        width: 80%;
+    }
+    .trial_button{
+        font-weight: bold;
+        font-size: 1em;
+    }
+}
+@media(min-width: 600px){
+    .signup_input{
+        width: 450px;
+    }
+    .trial_button{
+        display: block;
+        margin: 15px auto;
+    }
+    .header_wrapper{
+        background: linear-gradient(to top,rgba(0.4,0.4,0.4,0)rgba(0.4,0.4,0,0.6),rgba(0.4,0,0,0.8));
+    }
+}
+@media(min-width: 730px){
+    h1{
+        width: 610px;
+        margin: auto;
+    }
+}
+@media(min-width: 950px){
+    .trial_button{
+        display: inline;
+        margin-left: -5px;
+    }
+    #signup_instruction_mobile{
+        display: none;
+    }
+    #signup_instruction_web{
+        display: block;
+        font-weight: bold;
+    }
+    .description_container{
+        padding-top: 150px;
+    }
+    .svg-icon-netflix-logo{
+        height: 35px;
+    }
+}
