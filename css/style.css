@@ -15,12 +15,16 @@ body{
     background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.8)),url('../images/header_background_image.jpg');
     background-position: top;
     background-size: cover;
-    padding-bottom: 250px;
+    padding-bottom: 180px;
     border-bottom: 7px solid grey;
 }
 .logo_signin{
     width: 85%;
     margin: auto;
+}
+h1{
+    font-size: 1.75rem;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 .header_wrapper{
     background: linear-gradient(to top,rgba(0.4,0.4,0.4,0),rgba(0,0,0,0.8),rgba(0.4,0,0));
@@ -28,6 +32,7 @@ body{
 .header_description{
     width: 80%;
     margin: auto;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 .svg-icon-netflix-logo{
     height: 24px;
@@ -36,7 +41,7 @@ body{
 }
 .description_container{
     text-align: center;
-    padding: 50px 0;
+    padding: 70px 0;
 }
 .signin{
     background-color: var(--red);
@@ -62,6 +67,9 @@ body{
     font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 #signup_instruction_web{
+    display: none;
+}
+.web_button_text{
     display: none;
 }
 
@@ -110,6 +118,12 @@ body{
     .trial_button{
         font-weight: bold;
         font-size: 1em;
+    }
+    .mobile_button_text{
+        display: none;
+    }
+    .web_button_text{
+        display: block;
     }
 }
 @media(min-width: 600px){
