@@ -149,6 +149,7 @@ h1{
 .download_media_container{
     margin: -30px auto 0 auto;
     width: 450px;
+    margin: auto;
 }
 .mobile_image{
     position: relative;
@@ -195,6 +196,10 @@ h1{
     width: 50px;
 }
 
+/* streaming section */
+.streaming_devices{
+    width: 300px;
+}
 
 
 
