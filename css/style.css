@@ -99,14 +99,14 @@ h1{
 }
 .tv_image_container{
     position: relative;
-    width: 450px;
+    width: 300px;
+    margin: auto;
     /* max-width: 75vw; */
-    margin: -35px auto 0 auto;
+    /* margin: -35px auto 0 auto; */
 }
 .tv_image{
     position: relative;
-    width: 400px;
-    /* max-width: 75vw; */
+    width: 300px;
     background-position: center;
     background-size: contain;
     margin: auto;
@@ -114,10 +114,10 @@ h1{
     z-index: 2;
 }
 
-video{
+.tv_image_container video{
     position: absolute;
-    top: 63px;
-    left: 59px;
+    top: 5px;
+    left: 40px;
     z-index: 1;
     /* grid-area: 1/1/2/2;
     z-index: 1; */
@@ -154,7 +154,7 @@ video{
     position: relative;
     display: block;
     margin: auto;
-    width: 400px;
+    width: 300px;
     z-index: 1;
 }
 .boxshot_container{
@@ -163,9 +163,9 @@ video{
     justify-content: space-between;
     background-color: black;
     border: 2px solid rgba(128, 128, 128, 0.575);
-    width: 290px;
+    width: 250px;
     height: 50px;
-    margin: -100px auto 0 auto;
+    margin: -90px auto 0 auto;
     padding: 10px;
     border-radius: 1rem;
     z-index: 2;
