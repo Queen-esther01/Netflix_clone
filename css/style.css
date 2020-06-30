@@ -147,7 +147,11 @@ h1{
 }
 .download_media_container{
     margin: -30px auto 0 auto;
+<<<<<<< HEAD
     width: 350px;
+=======
+    width: 300px;
+>>>>>>> 4c3dc41c930e642153e37e74a6f02c1daf2a5858
     margin: auto;
 }
 .mobile_image{
@@ -472,6 +476,7 @@ h1{
         height: 50px;
         margin-top: 10px;
     }
+<<<<<<< HEAD
 
     /* streaming section */
     .streaming_device_container{
@@ -500,3 +505,6 @@ h1{
         font-size: 26px;
     }
 }
+=======
+}
+>>>>>>> 4c3dc41c930e642153e37e74a6f02c1daf2a5858
