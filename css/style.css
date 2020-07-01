@@ -65,7 +65,8 @@ h1{
     color: white;
     font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
-#signup_instruction_web{
+#signup_instruction_web,
+.signup_instruction_web{
     display: none;
 }
 .web_button_text{
@@ -147,11 +148,7 @@ h1{
 }
 .download_media_container{
     margin: -30px auto 0 auto;
-<<<<<<< HEAD
     width: 350px;
-=======
-    width: 300px;
->>>>>>> 4c3dc41c930e642153e37e74a6f02c1daf2a5858
     margin: auto;
 }
 .mobile_image{
@@ -244,14 +241,19 @@ h1{
 /* faq section */
 .faq_section{
     background-color: black;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
     color: white;
     border-top: 7px solid rgba(90, 90, 90, 0.575);
+}
+.faq_section h1{
+    text-align: center;
+    margin: 50px auto 30px auto;
+
 }
 .accordion{
     background-color: #303030;
     color: white;
-    margin-top: 10px;
+    margin: 10px auto 0 auto;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -259,6 +261,7 @@ h1{
     border: none;
     outline: none;
     transition: 0.4s;
+    font-weight: 400;
 }
 .accordion::after{
     content: '\02795';
@@ -277,8 +280,46 @@ h1{
     display: none;
     /* transition: max-height 0.2s ease-out; */
 }
+.membership_form{
+    margin-top: 30px;
+    text-align: center;
+}
+.signup_instruction_mobile{
+    display: block;
+    width: 65%;
+    font-weight: 20px;
+    margin: auto;
+    font-weight: bold;
+}
+.signup_instruction_web{
+    width: 85%;
+    margin: auto;
+    font-weight: bold;
+}
+.membership_form input{
+    margin-top: 20px;
+}
 
-
+/* footer section */
+.footer_section{
+    border-top: 7px solid rgba(90, 90, 90, 0.575);
+    background-color: black;
+    color: rgba(173, 173, 173, 0.575);
+    font-size: 14px;
+}
+.footer_wrapper{
+    width: 70%;
+}
+.footer_list_container{
+    display: block;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ul li{
+    display: block;
+}
 
 
 
@@ -366,6 +407,15 @@ h1{
     .streaming_heading h2{
         font-size: 20px;
     }
+
+    /* accordion section */
+    .accordion_wrapper{
+        width: 80%;
+        margin: auto;
+    }
+    .accordion{
+        font-size: 18px;
+    }
 }
 @media(min-width: 600px){
     .signup_input{
@@ -378,7 +428,12 @@ h1{
     .header_wrapper{
         background: linear-gradient(to top,rgba(0.4,0.4,0.4,0)rgba(0.4,0.4,0,0.6),rgba(0.4,0,0,0.8));
     }
-    
+    .signup_instruction_web{
+        display: block;
+    }
+    .signup_instruction_mobile{
+        display: none;
+    }
     
 }
 @media(min-width: 730px){
@@ -476,7 +531,6 @@ h1{
         height: 50px;
         margin-top: 10px;
     }
-<<<<<<< HEAD
 
     /* streaming section */
     .streaming_device_container{
@@ -504,7 +558,10 @@ h1{
     .streaming_heading h2{
         font-size: 26px;
     }
+
+    /* faq section */
+    .accordion_wrapper{
+        width: 800px;
+        margin: auto;
+    }
 }
-=======
-}
->>>>>>> 4c3dc41c930e642153e37e74a6f02c1daf2a5858
