@@ -1,28 +1,61 @@
 const accordion = document.getElementsByClassName('accordion');
 
 
-let myArray = []
+// accordions.forEach(accordions => {
+//     accordions.addEventListener('click', event=>{
+//         accordions.classList.toggle('active');
+//     });
+// });
+
 for(let i = 0; i < accordion.length; i++){
-    console.log(i);
-    myArray.push(i);
+    accordion[i].addEventListener('click', ()=>{
+        accordion[i].classList.toggle('active');
+    
+        let panel = accordion[i].nextElementSibling;
+        if(panel.style.display === 'block'){
+            panel.style.display = 'none';
+        } else{
+            panel.style.display = 'block';
+        }
+    })
 }
-console.log(myArray)
 
-if(myArray.includes(4)){
-    console.log('yeah boy')
-}
 
-accordion[2].addEventListener('click', ()=>{
-    console.log('esther');
-    console.log(accordion[2].classList.toggle('active'));
 
-    let panel = accordion[2].nextElementSibling;
-    if(panel.style.display === 'block'){
-        panel.style.display = 'none';
-    } else{
-        panel.style.display = 'block';
-    }
-})
+// let array = [];
+// for(index in accordions.length){
+//     array.push(accordions[index]) ;
+// }
+// console.log(array)
+
+// let accArray = [1,2,3,4,5]
+// for(arr of accArray){
+//     console.log(arr)
+// }
+
+// console.log(accordions)
+// console.log(accArray)
+// console.log(typeof accordions)
+// console.log(typeof accArray)
+// console.log(accordionHeader.children)
+
+// for(index in accordions){
+//     console.log(accordions[index])
+    
+// };
+
+// let myArray = []
+// for(let i = 0; i < accordion.length; i++){
+//     console.log(i);
+//     myArray.push(i);
+// }
+// console.log(myArray)
+
+// if(myArray.includes(4)){
+//     console.log('yeah boy')
+// }
+
+
 
 // let us = [1,5]
 // if(us.includes(5)){

@@ -260,14 +260,15 @@ h1{
     text-align: left;
     border: none;
     outline: none;
-    transition: 0.4s;
+    transition: 0.5s;
     font-weight: 400;
 }
 .accordion::after{
-    content: '\02795';
-    font-size: 16px;
+    content: '\002b';
+    font-size: 1.5rem;
     color: white;
     float: right;
+    transition: 600ms;
 }
 .active::after{
     content: '\00D7';
@@ -304,22 +305,32 @@ h1{
 .footer_section{
     border-top: 7px solid rgba(90, 90, 90, 0.575);
     background-color: black;
-    color: rgba(173, 173, 173, 0.575);
+    color: #757575;
     font-size: 14px;
 }
 .footer_wrapper{
-    width: 70%;
+    padding: 50px 2%;
+}
+.footer_wrapper p{
+    padding-left: 40px;
 }
 .footer_list_container{
-    display: block;
-    list-style: none;
+    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 ul li{
-    display: block;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    margin-left: 0;
+    display: inline-block;
+    min-width: 100px;
+    width: 50%;
+    vertical-align: top;
+    text-align: left;
 }
+
 
 
 
@@ -416,6 +427,11 @@ ul li{
     .accordion{
         font-size: 18px;
     }
+
+    /* footer section */
+    ul li{
+        width: 28%;
+    }
 }
 @media(min-width: 600px){
     .signup_input{
@@ -441,7 +457,10 @@ ul li{
         width: 610px;
         margin: auto;
     }
-
+    /* footer section */
+    ul li{
+        width: 20%;
+    }
     
 }
 @media(min-width: 950px){
